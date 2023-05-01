@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Equation du second degré
+        // Définir les coefficients a, b et c
+let a = 1;
+let b = 5;
+let c = 6;
+
+// Calculer le discriminant
+let discriminant = b * b - 4 * a * c;
+
+// Vérifier si l'équation a des solutions réelles
+if (d< 0) {
+    console.log("L'équation n'a pas de solutions réelles.");
+} else if (d===0) {
+    let x = -b / (2 * a);
+    console.log(" alors L'équation a une solution réelle: x = " + x);
+} else {
+    let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+    console.log("L'équation a deux solutions réelles: x1 = " + x1 + ", x2 = " + x2);
+}
+// table de mulplication de 5 pour les nombres impaires
+for (let i = 1; i <= 100; i++) {
+  let result = 5 * i;
+  if (result % 2 !== 0) {
+      result = "5 * "+i+" = "+result;
+      console.log(result);
+  }
+}
+//// table de mulplication de 5 pour les nombres paires
+for (let i = 1; i <= 100; i++) {
+  let result = 5 * i;
+ if (result % 2 === 0){
+      result = "5 * "+i+" = "+result;
+      console.log(result);
+  }
+}
+    </script>
+</body>
+</html>
